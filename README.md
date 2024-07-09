@@ -48,7 +48,7 @@ Other bots we offer:
 While our videos focus mostly on token creators, it is totally possible to use it with any token from pump.fun and raydium. Choose "Farm Token" from the console and enter the CA addresse, if the token is not yet trading you can snipe some initial supply on launch, and farming a token is always possible with already launched token.
 
 ## Overview
-This guide outlines the process for managing market creation and transactions using Solana Bundler.
+This guide outlines the process for managing market creation and transactions using Pumpfun Farming bot.
 
 Below are detailed instructions for setting up your environment and executing prompts in a sequential manner.
 
