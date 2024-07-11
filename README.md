@@ -52,74 +52,34 @@ This guide outlines the process for managing market creation and transactions us
 
 Below are detailed instructions for setting up your environment and executing prompts in a sequential manner.
 
-### Initial Setup
+## Installation
 
-1. **Install Dependencies**
-   ```bash
-   npm install
+To get started with the Pump.Fun Launch Bundle Tool, follow these steps:
 
-2. **Configuration**
-    - Place your Blockengine keypair in `blockengine.json`.
-    - Modify `config.ts`:
-      - It includes two keypairs:
-        1. One for handling SOL distribution fees.
-        2. Another for creating the pool.
-      - These keypairs can be the same if desired.
-    - Modify RPC URL with one that supports JITO(e.g. Helius)
+1. DM me on TG - @solanatoolsbots
 
-3. **Run script**
-   ```bash
-   npx ts-node main.ts
+   
+3. Navigate to the project directory:
+    ```bash
+    cd pumpfun-launcher
+    ```
+4. Install the necessary dependencies:
+    ```bash
+    npm install
+    ```
+5. Set up your environment variables by creating a `.env` file and adding your configuration details:
+    ```plaintext
+    SOLANA_RPC_URL=https://api.mainnet-beta.solana.com
+    PRIVATE_KEY=<your-private-key-bs58>
+    ```
+6. Start the application:
+    ```bash
+    npm start
+    ```
 
-## Script Functions
+## Usage
 
-Execute these steps in sequential order. After executing each step, verify the transaction bundle has landed by checking the first included transaction on [Jito Explorer](https://explorer.jito.wtf/).
-
-### A) Create Keypairs
-Run this step as needed, not necessarily for every launch. Ensure the existent keypairs hold no SOL before proceeding because this will override them with new keypairs.
-
-### B) Premarket
-Execute steps 2 through 6 in order. If a bundle does not land, re-execute the step with a higher tip. Step 1 is optional because you can create a market through other methods as well.
-
-### C) Create Pool
-Repeatedly invoke the pool creation & bundling function. Increasing the tip and repeated attempts are recommended due to Solana congestion at peak times.
-
-### D) Sell Features
-After the pool is live, proceed to either:
-  - Sell all keypairs at once and reclaim SOL in the subsequent step.
-  - Gradually sell portions of the token supply on demand. This process involves transferring a percentage of each keypair's token balance to the fee payers and selling it all in one bundle.
-
-### E) LP Removal
-This step removes liquidity from the market(if LP tokens are not burned)
-
-## Notes
-
-- Ensure you maintain a minimal SOL balance in your fee wallet so you can cover all the network fees.
-- Monitor each transaction bundle to confirm landing using the suggested link to the explorer before proceeding to the next step.
-- Consider adjusting the tip to ensure transactions land promptly.
-
-### Main Menu
-
-```bash
-Menu:
-1. Create Token
-2. Manage Token
-3. Send Airdrop
-4. Farm Token
-5. Import Accounts
-6. Settings
-BACK
-```
-
-### Buyer UI
-```
-1. Create Market (0.3 SOL)
-2. Create LUT and SOL ATAs Solfarmer
-3. Extend LUT Solfarmer
-4. Create ATAs and Send SOL Solfarmer
-5. Simulate LP Buys (Get exact amounts)
-6. Send SOL Solfarmer
-7. Close SOL Accounts to deployer
-```
-
+1. Configure your buyers and launch settings using the intuitive UI.
+2. Start the bundling process and let the tool handle the rest automatically.
+3. Profit
   
