@@ -4,7 +4,7 @@ The most eficient & fastest farming bot in the solana ecosystem, capable of snip
 
 https://github.com/solanatoolsbots/pumpfun-farming-bot/assets/175059128/8170c847-e941-4120-886c-b7e6c0ec57e9
 
-**TELEGRAM** for purchases or questions:
+**TELEGRAM** for purchases or questions reach me out at:
 
 [@solanatoolsbots](https://t.me/solanatoolsbots)
 
